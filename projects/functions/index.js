@@ -47,8 +47,7 @@ function returnFnResult(fn) {
 }
 
 returnFnResult(function () {
-  const result = 'hello';
-  return result;
+  return 'hello';
 });
 
 /*
@@ -67,7 +66,7 @@ returnFnResult(function () {
 
 function returnCounter(number = 0) {
   const newFunc = function () {
-    return (number = number + 1);
+    return ++number;
   };
   return newFunc;
 }
